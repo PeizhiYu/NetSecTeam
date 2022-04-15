@@ -1,0 +1,2 @@
+ssh -p 9000 -i BrianServer_key -L 30001:192.168.49.2:30001 ddosteam@wallace.andrew.cmu.edu
+

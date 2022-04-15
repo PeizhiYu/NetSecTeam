@@ -13,6 +13,7 @@ def fire_and_forget(url):
 
 i = 0
 
-while True:
-    print(i)
-    fire_and_forget(home)
+if __name__ == "__main__":
+    while True:
+        print(i)
+        fire_and_forget(home)
