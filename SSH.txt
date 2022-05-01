@@ -1,2 +1,7 @@
 ssh -p 9000 -i BrianServer_key -L 30001:192.168.49.2:30001 ddosteam@wallace.andrew.cmu.edu
 
+ssh -p 9000 -i BrianServer_key -L 12000:0.0.0.0:12000 ddosteam@wallace.andrew.cmu.edu
+
+kubectl apply -f https://raw.githubusercontent.com/cilium/cilium/v1.8/examples/kubernetes/addons/prometheus/monitoring-example.yaml
+
+helm install cilium cilium/cilium --version 1.8.13 --namespace kube-system --set global.prometheus.enabled=true --set global.operatorPrometheus.enabled=true

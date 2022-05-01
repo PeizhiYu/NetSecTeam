@@ -1,3 +1,5 @@
+#Reference: https://www.thepythoncode.com/article/extract-all-website-links-python
+
 import requests
 from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup

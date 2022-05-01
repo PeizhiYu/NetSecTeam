@@ -1,7 +1,7 @@
 import requests
 import threading
 
-url = 'http://localhost:30001/login' #vulnerable
+url = 'http://localhost:30001/basket.html' #vulnerable
 home = 'http://localhost:30001/' #not work
 
 def request_task(t):
@@ -15,5 +15,4 @@ i = 0
 
 if __name__ == "__main__":
     while True:
-        print(i)
         fire_and_forget(home)

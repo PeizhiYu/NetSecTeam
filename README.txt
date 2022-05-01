@@ -3,3 +3,5 @@ Run either Attack.py or slowloris attack in slowloris.txt
 
 (The SSH command makes it possible to access sockshop frontend
 on localhost:30001)
+
+slowloris -v -p 30001 -s 400 localhost
