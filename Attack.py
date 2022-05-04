@@ -1,3 +1,5 @@
+#Reference: https://stackoverflow.com/questions/58588131/how-to-work-with-request-post-method-without-waiting-for-response
+
 import requests
 import threading
 
